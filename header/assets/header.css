@@ -1,0 +1,99 @@
+#header-round{
+    display: block;
+    padding: auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    position: fixed;
+    content: url(Saif8142.png);
+    z-index: 5;
+}
+#header{
+    display: block;
+    background: url(ancient_debris_top.png);
+    padding: auto;
+    height: 150px;
+    width: 100%;
+    border-radius: 5px;
+    position: sticky;
+    z-index: 5;
+}
+#hcontainer{
+    background-color: none;
+    display: inline-block;
+    color: white;
+    position: sticky;
+    text-decoration: none;
+    text-align: center;
+    text-align: center;
+    z-index: 1;
+    width: 79%;
+    padding: auto;
+    top: 2%;
+    margin-left: 20%;
+    border-radius: 5px;
+    height: 150px;
+}
+#hcontainer a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    min-width: 50px;
+    font-size: 25px;
+    min-height: 30px;
+    display: inline-block;
+    background: url(crimson_nylium_side5.png);
+    border-radius: 5px;
+    margin: 3px;
+    transition:all 0.5s;
+}
+#hcontainer a:hover{
+    transition:all 0.5s;
+    background: url(crimson_planks.png);
+    overflow: auto;
+}
+/*Loading animations*/
+#header-round{
+    animation-name: Loader;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-style: solid;
+    border-left-color: blue;
+    border-right-color: white;
+}
+#header-round img{
+    display: block;
+    padding: auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    position: fixed;
+    z-index: 5;
+    animation-name: imgLoader;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes Loader{
+    0%{
+        transform: rotate(0deg);
+        content: none;
+        background: local;
+        background: url(crimson_planks.png);
+    }
+    100%{
+        transform: rotate(360deg);
+        content: none;
+        background: local;
+        background: url(crimson_planks.png);
+    }
+}
+@keyframes imgLoader{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
